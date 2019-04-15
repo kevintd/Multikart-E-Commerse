@@ -4,8 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShopRoutingModule } from './shop-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { BarRatingModule } from "ngx-bar-rating";
-import { RangeSliderModule  } from 'ngx-rangeslider-component';
+import { BarRatingModule } from 'ngx-bar-rating';
+import { RangeSliderModule } from 'ngx-rangeslider-component';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { NgxPayPalModule } from 'ngx-paypal';
 import { NgxImgZoomModule } from 'ngx-img-zoom';
@@ -129,7 +129,7 @@ import { ProductSliderFourteenComponent } from './home-14/product-slider/product
 import { ProductTabFourteenComponent } from './home-14/product-tab/product-tab.component';
 import { BlogFourteenComponent } from './home-14/blog/blog.component';
 import { LogoFourteenComponent } from './home-14/logo/logo.component';
-// Products Components 
+// Products Components
 import { ProductComponent } from './product/product.component';
 import { ProductBoxComponent } from './product/product-box/product-box.component';
 import { ProductBoxHoverComponent } from './product/product-box-hover/product-box-hover.component';
@@ -342,4 +342,4 @@ import { NewsletterComponent } from './product/widgets/newsletter/newsletter.com
     NewsletterComponent
   ]
 })
-export class ShopModule { }
+export class ShopModule {}
