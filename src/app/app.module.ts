@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
-import { Http, HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShopModule } from './shop/shop.module';
 import { SharedModule } from './shared/shared.module';
@@ -15,7 +14,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { DemoComponent } from './demo/demo.component';
-import * as $ from 'jquery';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -26,7 +24,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [AppComponent, MainComponent, DemoComponent],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     ShopModule,
     SharedModule,
