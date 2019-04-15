@@ -1,22 +1,18 @@
 import { Injectable, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/platform-browser';
-import * as $ from 'jquery';
+import { DOCUMENT } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
 })
-
 export class LandingFixService {
-   
-  constructor(@Inject(DOCUMENT) private document: Document) { }
-  
+  constructor(@Inject(DOCUMENT) private document: Document) {}
+
   // Add or Remove class
   public addNavFix() {
-     this.document.getElementById("mySidenav").classList.add('open-side');
+    this.document.getElementById('mySidenav').classList.add('open-side');
   }
 
   public removeNavFix() {
-     this.document.getElementById("mySidenav").classList.remove('open-side');
+    this.document.getElementById('mySidenav').classList.remove('open-side');
   }
-  
 }

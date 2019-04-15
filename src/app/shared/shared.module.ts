@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from "@angular/router";
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 // Services
-import { WINDOW_PROVIDERS } from "./services/windows.service";
+import { WINDOW_PROVIDERS } from './services/windows.service';
 import { LandingFixService } from '../shared/services/landing-fix.service';
-import { InstagramService } from "./services/instagram.service";
-import { ProductsService } from "./services/products.service";
-import { WishlistService } from "./services/wishlist.service";
-import { CartService } from "./services/cart.service";
-import { OrderService } from "./services/order.service";
-import { PaginationService } from "./classes/paginate";
+import { InstagramService } from './services/instagram.service';
+import { ProductsService } from './services/products.service';
+import { WishlistService } from './services/wishlist.service';
+import { CartService } from './services/cart.service';
+import { OrderService } from './services/order.service';
+import { PaginationService } from './classes/paginate';
 // Pipes
 import { OrderByPipe } from './pipes/order-by.pipe';
 // components
@@ -51,11 +51,7 @@ import { SocialComponent } from './footer/widgets/social/social.component';
     FooterFourComponent,
     OrderByPipe
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    TranslateModule
-  ],
+  imports: [CommonModule, RouterModule, TranslateModule],
   declarations: [
     HeaderOneComponent,
     HeaderTwoComponent,
@@ -90,4 +86,4 @@ import { SocialComponent } from './footer/widgets/social/social.component';
     PaginationService
   ]
 })
-export class SharedModule { }
+export class SharedModule {}
