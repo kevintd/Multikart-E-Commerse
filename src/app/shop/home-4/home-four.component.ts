@@ -8,18 +8,17 @@ import { ProductsService } from '../../shared/services/products.service';
   styleUrls: ['./home-four.component.scss']
 })
 export class HomeFourComponent implements OnInit {
-
   public products: Product[] = [];
-  
-  constructor(private productsService: ProductsService) {   }
+
+  constructor(private productsService: ProductsService) {}
 
   ngOnInit() {
-  	this.productsService.getProducts().subscribe(product => { 
-  	  product.filter((item: Product) => {
-         if(item.category == 'vegetable')
-         	this.products.push(item)
-      })
+    this.productsService.getProducts().subscribe((product) => {
+      product.filter((item: Product) => {
+        if (item.category == 'vegetable') {
+          this.products.push(item);
+        }
+      });
     });
   }
-
 }

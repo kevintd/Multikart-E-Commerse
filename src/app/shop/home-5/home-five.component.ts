@@ -8,18 +8,15 @@ import { ProductsService } from '../../shared/services/products.service';
   styleUrls: ['./home-five.component.scss']
 })
 export class HomeFiveComponent implements OnInit {
-
   public products: Product[] = [];
-  
-  constructor(private productsService: ProductsService) {   }
+
+  constructor(private productsService: ProductsService) {}
 
   ngOnInit() {
-  	this.productsService.getProducts().subscribe(product => { 
-  	  product.filter((item: Product) => {
-         if(item.category == 'watch')
-         	this.products.push(item)
-      })
+    this.productsService.getProducts().subscribe((product) => {
+      product.filter((item: Product) => {
+        if (item.category == 'watch') { this.products.push(item); }
+      });
     });
   }
-
 }
